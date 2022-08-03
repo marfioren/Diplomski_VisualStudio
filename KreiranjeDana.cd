@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TerapijaRaspored.Baza.BazaPod">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQGAAAIAAAQAAACFAAAAgAAACAAAAAQAIAgAAQABAA=</HashCode>
+      <FileName>Baza\BazaPod.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="instanca" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TerapijaRaspored.Aktivnosti.KreiranjeDana">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IhDAAAARAEAAAAABAAQAAQAAoHIBgACABAsAACIAAAA=</HashCode>
+      <FileName>Aktivnosti\KreiranjeDana.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="con" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TerapijaRaspored.Raspored.Pdf">
+    <Position X="1.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAABAAAAAAAAAAQAAAAAAABAAA=</HashCode>
+      <FileName>Raspored\Pdf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.Aktivnosti.Popup.KreiranjeRasporeda">
+    <Position X="6" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TerapijaRaspored.Aktivnosti.Popup.KreiranjeRasporeda.DialogEventArgs">
+        <TypeIdentifier>
+          <NewMemberFileName>Aktivnosti\Popup\KreiranjeRasporeda.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="TerapijaRaspored.Aktivnosti.Popup.KreiranjeRasporeda.DialogEventHandler">
+        <TypeIdentifier>
+          <NewMemberFileName>Aktivnosti\Popup\KreiranjeRasporeda.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAkAAAAAAAAAABBACAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Aktivnosti\Popup\KreiranjeRasporeda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

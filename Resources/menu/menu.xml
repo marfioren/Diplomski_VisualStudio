@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#7ED5B3">
+    <item
+        android:id="@+id/spremi"
+        android:icon="@drawable/save"
+        android:title="Spremi"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/odjavi"
+        android:title="Odjava"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/kreirajRas"
+        android:title="Kreiraj Raspored"
+        app:showAsAction="never"/>
+</menu>

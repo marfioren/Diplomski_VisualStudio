@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TerapijaRaspored.MainActivity">
+    <Position X="4" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAIAAAAQEEADAAAACAAAoAAgAAAAA=</HashCode>
+      <FileName>MainActivity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="con" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TerapijaRaspored.Baza.BazaPod">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQGAAAIAAAQAAACFAAAAgAAACAAAAAQAIAgAAQABAA=</HashCode>
+      <FileName>Baza\BazaPod.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="instanca" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TerapijaRaspored.Baza.Async">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAQAAAAAAAABAgACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Baza\Async.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.Baza.Konekcija">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAAAAAAAAAAAAAAAAAAAQAAAAAACAAAAAABCAAAAA=</HashCode>
+      <FileName>Baza\Konekcija.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.Baza.Podaci">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAAAAAAAAAAIAAAABAgAIAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Baza\Podaci.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.OpisneKlase.Dan">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AGCCAAAEAACAAAAAAAAAABAAAAEGAAiAAAAAAAAAAAA=</HashCode>
+      <FileName>OpisneKlase\Dan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.OpisneKlase.Klijent">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAEQACABEAAAAAAAAAAQAAgABAAAAAAAAAAEAgA=</HashCode>
+      <FileName>OpisneKlase\Klijent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

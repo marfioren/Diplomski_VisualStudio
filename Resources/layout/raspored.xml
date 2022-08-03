@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="150dp">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="23dp"
+        android:gravity="center_horizontal"
+        android:text="Od:" />
+
+    <TextView
+        android:id="@+id/dat1"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="0dp"
+        android:text="TextView" />
+
+    <android.widget.Button
+        android:id="@+id/promjenid1"
+        android:layout_width="101dp"
+        android:layout_height="42dp"
+        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="171dp"
+        android:layout_marginLeft="171dp"
+        android:gravity="center_horizontal"
+        android:text="Promjeni" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="78dp"
+        android:gravity="center_horizontal"
+        android:text="Do:" />
+
+    <TextView
+        android:id="@+id/dat2"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="0dp"
+        android:text="TextView" />
+    <android.widget.Button
+        android:id="@+id/promjenid2"
+        android:layout_width="101dp"
+        android:layout_height="42dp"
+        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="171dp"
+        android:layout_marginLeft="171dp"
+        android:gravity="center_horizontal"
+        android:text="Promjeni" />
+
+</RelativeLayout>
