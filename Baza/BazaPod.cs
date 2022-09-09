@@ -19,10 +19,9 @@ namespace TerapijaRaspored.Baza
         private static BazaPod instanca = null;
         private Context context;
         private int stavljeno = 0;
-        private int Ulogiranizaposlenik;
-
+        private Zaposlenik UlogiraniZaposlenik;
         public int Stavljeno { get => stavljeno;}
-        public int ulogiranizaposlenik { get => Ulogiranizaposlenik; set => Ulogiranizaposlenik = value; }
+        internal Zaposlenik UlogiraniZaposlenik1 { get => UlogiraniZaposlenik; }
 
         public List<Klijent> getSviKlijenti() { return sviKlijenti; }
         public List<Dan> getSviDani() { return sviDani; }
@@ -42,7 +41,18 @@ namespace TerapijaRaspored.Baza
             sviDani = new List<Dan>();
         }
 
-        public void StaviSveKlijente(List<String> SviKlijenti)
+        public void Odjava() {
+
+            instanca = new BazaPod();
+        }
+
+        public void PrijaviZaposlenika(String PodaciZaposlenika)
+        {
+            List<String> polje = new List<String>(PodaciZaposlenika.Split('#', 5));
+            UlogiraniZaposlenik = new Zaposlenik(Convert.ToInt32(polje[0]),polje[1], polje[2], polje[3], polje[4]);
+
+        }
+            public void StaviSveKlijente(List<String> SviKlijenti)
         {
             List<String> podaci = new List<String>();
             podaci = SviKlijenti;           

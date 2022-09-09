@@ -32,6 +32,8 @@ namespace TerapijaRaspored.Aktivnosti
     {
         TextView t1;
         TextView t2;
+        TextView t3;
+        TextView t4;
         Button odaberiDat;
         Button dodajK;
         Button brisiK;
@@ -76,6 +78,8 @@ namespace TerapijaRaspored.Aktivnosti
             
             t1 = v1.FindViewById<TextView>(Resource.Id.dat);
             t2 = v1.FindViewById<TextView>(Resource.Id.kilometri);
+            t3 = v1.FindViewById<TextView>(Resource.Id.pocetnoS);
+            t4 = v1.FindViewById<TextView>(Resource.Id.zavrsnoS);
             spin = v1.FindViewById<Spinner>(Resource.Id.spinner);
             DateTime Trenutnovrijeme = DateTime.Now;
             String datumTrenutno = Trenutnovrijeme.Day + "/" + Trenutnovrijeme.Month + "/" + Trenutnovrijeme.Year;
@@ -102,12 +106,13 @@ namespace TerapijaRaspored.Aktivnosti
                     }
                 case Resource.Id.odjavi:
                     {
+                        con.Odjava();
                         var intent = new Intent(this, typeof(MainActivity));
                         StartActivity(intent);
                         return true;
                     }
                 case Resource.Id.kreirajRas:
-                    {
+                    {                   
                         KreirajRaspored();                     
                         return true;
                     }
@@ -142,6 +147,7 @@ namespace TerapijaRaspored.Aktivnosti
             dialogFragment.Dismissed += (s, e) => {
                 dodajKorisnike(e.DodaniKlijenti);
             };
+            
         }
 
         public void KreirajRaspored()
@@ -248,7 +254,11 @@ namespace TerapijaRaspored.Aktivnosti
             }
             updateSpinner();
             string km = d.Km1;
+            string ps = d.Pstanje1;
+            string zs = d.Zstanje1;
             t2.Text = km;
+            t3.Text = ps;
+            t4.Text = zs;
         }
 
         public async void spremanjeDana()
@@ -266,13 +276,13 @@ namespace TerapijaRaspored.Aktivnosti
                 }
             }
             string Datum = datum;
-            string Poc = "0";
-            string Zav = "0";
+            string Poc = t3.Text;
+            string Zav = t4.Text;
             string Pkm = km;
             string Popis = lista;
-            int Mjesec = 10;
-            int Godina = 2021;
-            int Zaposlenik = con.ulogiranizaposlenik;
+            int Mjesec = 9;
+            int Godina = 2022;
+            int Zaposlenik = con.UlogiraniZaposlenik1.Id1;
             string link = "http://crofi.com/assets/assets/images/RasporedBaza/UpdateDan.php?Datum=" + Datum + "&Poc=" + Poc + "&Zav=" + Zav + "&Pkm=" + Pkm + "&Popis=" + Popis + "&Mjesec=" + Mjesec + "&Godina=" + Godina + "&Zaposlenik=" + Zaposlenik;
             Podaci update = new Podaci(this, 1);
             int r = 0;

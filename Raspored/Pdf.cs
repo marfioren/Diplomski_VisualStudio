@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TerapijaRaspored.OpisneKlase;
+using TerapijaRaspored.Baza;
 
 namespace TerapijaRaspored.Raspored
 {
@@ -18,6 +19,7 @@ namespace TerapijaRaspored.Raspored
     {
         List<Dan> Dani = new List<Dan>();
         List<int> index = new List<int>();
+        BazaPod con;
         public PdfDocument Kreirajpdf(List<Dan> SortiraniDan)
         {
             Console.WriteLine("broj dana: " + SortiraniDan.Count);
@@ -69,6 +71,8 @@ namespace TerapijaRaspored.Raspored
         {
             PdfDocument.PageInfo pi = new PdfDocument.PageInfo.Builder(1200, 2010, broj).Create();
             PdfDocument.Page myPage = pdf.StartPage(pi);
+            con = BazaPod.getInstanca();
+            Zaposlenik ulogiraniZap = con.UlogiraniZaposlenik1;
             int pageWidth = 1200;
             int pageHeight = 2010;
             //naslov
@@ -81,9 +85,9 @@ namespace TerapijaRaspored.Raspored
             c.DrawText("USTANOVA ZA NJEGU U KUĆI DOMNIUS, JARUŠČICA 9E, ZAGREB", 150, 100, title);
             c.DrawText("EVIDENCIJA O KRETANJU PRIVATNOG AUTOMOBILA ZA RAZDOBLJE", 150, 160, title);
             c.DrawText("OD " + Dani[0].Datum1 + " DO " + Dani[Dani.Count - 1].Datum1 + " godine U SLUŽBENE SVRHE", 150, 190, title);
-            c.DrawText("Korisnik: Andreja Stjepanović", 150, 250, title);
-            c.DrawText("Marka automobila: Citroen", 150, 280, title);
-            c.DrawText("Registarski broj automobila: 4864876584", 150, 310, title);
+            c.DrawText("Korisnik: " +ulogiraniZap.Ime1+" "+ulogiraniZap.Prezime1, 150, 250, title);
+            c.DrawText("Marka automobila: "+ulogiraniZap.Auto1, 150, 280, title);
+            c.DrawText("Registarski broj automobila: "+ulogiraniZap.Registracija1, 150, 310, title);
             //informacije u desnom kutu
             paint.SetTypeface(Typeface.DefaultBold);
             paint.TextSize = 30f;

@@ -56,6 +56,7 @@ namespace TerapijaRaspored.Aktivnosti.Popup
                    {
                        Console.WriteLine("Korisnik kliknuo Cancel");
                    });
+            
             return builder.Create();
         }
         public void dodavanjeKorisnika(object sender, EventArgs e) {

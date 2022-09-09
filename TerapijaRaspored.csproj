@@ -75,6 +75,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="OpisneKlase\Dan.cs" />
     <Compile Include="OpisneKlase\Klijent.cs" />
+    <Compile Include="OpisneKlase\Zaposlenik.cs" />
     <Compile Include="Raspored\Pdf.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

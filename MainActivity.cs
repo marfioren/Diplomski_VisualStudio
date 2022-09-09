@@ -93,7 +93,8 @@ namespace TerapijaRaspored
                         }
                         else
                         {
-                            con.ulogiranizaposlenik = Int32.Parse(result);
+                            con.PrijaviZaposlenika(result);
+                            
                             l = 1;
                         }
                         r = 1;
@@ -108,7 +109,7 @@ namespace TerapijaRaspored
                 else {
                     Podaci dohvatSvihKlijenta = new Podaci(this, 2);
                     Podaci dohvatSvihDana = new Podaci(this, 3);
-                    String link3 = "http://crofi.com/assets/assets/images/RasporedBaza/SviDani.php?id="+con.ulogiranizaposlenik;
+                    String link3 = "http://crofi.com/assets/assets/images/RasporedBaza/SviDani.php?id="+con.UlogiraniZaposlenik1.Id1;
                     r = 0;
                     Task t2 = Task.Run(() =>
                     {

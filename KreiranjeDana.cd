@@ -3,7 +3,7 @@
   <Class Name="TerapijaRaspored.Baza.BazaPod">
     <Position X="1" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQGAAAIAAAQAAACFAAAAgAAACAAAAAQAIAgAAQABAA=</HashCode>
+      <HashCode>AAQGAAAIAAIQAAAAFAAAEAAAADAAAAAQAIAgAAQABAA=</HashCode>
       <FileName>Baza\BazaPod.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -47,6 +47,84 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAkAAAAAAAAAABBACAAAAAgAAAAAAAA=</HashCode>
       <FileName>Aktivnosti\Popup\KreiranjeRasporeda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.Aktivnosti.Popup.DatumOdabir" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAABBAAAAAAACAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Aktivnosti\Popup\DatumOdabir.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TerapijaRaspored.Aktivnosti.Popup.DodavanjeKlijenta" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAIAAAAACAAAAAAQAAQAAAAABCAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Aktivnosti\Popup\DodavanjeKlijenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.Baza.Async" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAQAAAAAAAABAgACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Baza\Async.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.Baza.Konekcija" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAAAAAAAAAAAAAAAAAAAQAAAAAACAAAAAABCAAAAA=</HashCode>
+      <FileName>Baza\Konekcija.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.Baza.Podaci" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAAAAAAAAAAIAAAABAgAIAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Baza\Podaci.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.Kilometri.IzracunavanjeKm" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAEAQAAAAAAAQAAAAIAAAABAgAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Kilometri\IzracunavanjeKm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.Kilometri.KorisniciLokacije" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAEAAAABCAAAAAAAAAAAA=</HashCode>
+      <FileName>Kilometri\KorisniciLokacije.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.MainActivity" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAIAAAAQEEADAAAACAAAoAAgAAAAA=</HashCode>
+      <FileName>MainActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.OpisneKlase.Dan" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGCCAAAEAACAAAAAAAAAABAAAAEGAAiAAAAAAAAAAAA=</HashCode>
+      <FileName>OpisneKlase\Dan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.OpisneKlase.Klijent" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEQACABEAAAAAAAAAAQAAgABAAAAAAAAAAEAgA=</HashCode>
+      <FileName>OpisneKlase\Klijent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerapijaRaspored.OpisneKlase.Zaposlenik" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAQAQABAAAAAAAAAAAAAAAAACAIAAAAACgAAAA=</HashCode>
+      <FileName>OpisneKlase\Zaposlenik.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

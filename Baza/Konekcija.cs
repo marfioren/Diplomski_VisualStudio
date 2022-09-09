@@ -31,7 +31,10 @@ namespace TerapijaRaspored.Baza
         public List<String> SviDani(String podaci)
         {
             List<String> razdvojeniPodaci = new List<String>();
-            razdvojeniPodaci = RazdvojiPodatke(podaci);
+            if (podaci.Length != 0)
+            {
+                razdvojeniPodaci = RazdvojiPodatke(podaci);
+            }
             return razdvojeniPodaci;
         }
         public String DohvatiPodatke(String link)
